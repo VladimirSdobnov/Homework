@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SummaPositiv", "SummaPositi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Programexe", "Programexe\Programexe.vcxproj", "{A6C91676-2EB0-44BE-919D-F7D0A8FB3513}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SummaSQR", "SummaSQR\SummaSQR.vcxproj", "{E51FCF81-37F2-404C-9FA3-AF8E39146065}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{A6C91676-2EB0-44BE-919D-F7D0A8FB3513}.Release|x64.Build.0 = Release|x64
 		{A6C91676-2EB0-44BE-919D-F7D0A8FB3513}.Release|x86.ActiveCfg = Release|Win32
 		{A6C91676-2EB0-44BE-919D-F7D0A8FB3513}.Release|x86.Build.0 = Release|Win32
+		{E51FCF81-37F2-404C-9FA3-AF8E39146065}.Debug|x64.ActiveCfg = Debug|x64
+		{E51FCF81-37F2-404C-9FA3-AF8E39146065}.Debug|x64.Build.0 = Debug|x64
+		{E51FCF81-37F2-404C-9FA3-AF8E39146065}.Debug|x86.ActiveCfg = Debug|Win32
+		{E51FCF81-37F2-404C-9FA3-AF8E39146065}.Debug|x86.Build.0 = Debug|Win32
+		{E51FCF81-37F2-404C-9FA3-AF8E39146065}.Release|x64.ActiveCfg = Release|x64
+		{E51FCF81-37F2-404C-9FA3-AF8E39146065}.Release|x64.Build.0 = Release|x64
+		{E51FCF81-37F2-404C-9FA3-AF8E39146065}.Release|x86.ActiveCfg = Release|Win32
+		{E51FCF81-37F2-404C-9FA3-AF8E39146065}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
