@@ -1,0 +1,6 @@
+﻿  Programexe.c
+C:\Users\Ктото\source\repos\Homework\Programexe\Programexe.c(9,36): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+C:\Users\Ктото\source\repos\Homework\Programexe\Programexe.c(25,20): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+C:\Users\Ктото\source\repos\Homework\Programexe\Programexe.c(29,25): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+C:\Users\Ктото\source\repos\Homework\Programexe\Programexe.c(33,21): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  Programexe.vcxproj -> C:\Users\Ктото\source\repos\Homework\Debug\Programexe.exe
