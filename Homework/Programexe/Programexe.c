@@ -61,10 +61,10 @@ int main() {
 	int choose = 1000, a, b;
 	while (choose != 0) {
 		printf("Выбор фигуры: \n");
-		printf("1. Прямоугольник\n");
-		printf("2. Треугольник\n");
-		printf("3. Круг\n");
-		printf("0. Выйти из приложения\n");
+		printf("1. Прямоугольник.\n");
+		printf("2. Треугольник.\n");
+		printf("3. Круг.\n");
+		printf("0. Выйти из приложения.\n");
 		printf("Ввод: ");
 		scanf_s("%d", &choose);
 		if (choose == 1) {
@@ -82,17 +82,52 @@ int main() {
 				printf("Ввод: ");
 				scanf_s("%d", &choose);
 				if (choose == 1) {
-					printf("Площадь прямоугольника %d\n", sqr_sq(a, b));
+					printf("Площадь прямоугольника: %d\n", sqr_sq(a, b));
 					system("pause");
 					system("cls");
 				}
 				else if (choose == 2) {
-					printf("Периметр прямоугольника %d\n", perimetr_sq(a, b));
+					printf("Периметр прямоугольника: %d\n", perimetr_sq(a, b));
 					system("pause");
 					system("cls");
 				}
 				else if (choose == 3) {
-					printf("Диагональ прямоугольника %.2f\n", diagonal(a, b));
+					printf("Диагональ прямоугольника: %.2f\n", diagonal(a, b));
+					system("pause");
+					system("cls");
+				}
+				else {
+					system("cls");
+					break;
+				}
+			}
+		}
+		else if (choose == 2) {
+			system("cls");
+			printf("Введите две стороны прямоугольного треугольника: ");
+			scanf_s("%d %d", &a, &b);
+			system("cls");
+			while (choose < 4) {
+				printf("Меню:\n");
+				printf("1. Найти площадь треугольника.\n");
+				printf("2. Найти периметр треугольника.\n");
+				printf("3. Найти гипотенузу треугольника.\n");
+				printf("4. Вернуться к выбору фигуры.\n");
+				printf("0. Выйти.\n");
+				printf("Ввод: ");
+				scanf_s("%d", &choose);
+				if (choose == 1) {
+					printf("Площадь треугольника: %.2f\n", sqr_tr(a, b));
+					system("pause");
+					system("cls");
+				}
+				else if (choose == 2) {
+					printf("Периметр треугольника: %.2f\n", perimetr_tr(a, b));
+					system("pause");
+					system("cls");
+				}
+				else if (choose == 3) {
+					printf("Гипотенуза треугольника: %.2f\n", diagonal(a, b));
 					system("pause");
 					system("cls");
 				}
