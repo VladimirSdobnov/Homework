@@ -1,0 +1,3 @@
+﻿  Posledch.c
+C:\Users\Ктото\source\repos\Homework\Posledch\Posledch.c(13,8): warning C4013: system: нет определения; предполагается "extern" с возвратом типа "int"
+  Posledch.vcxproj -> C:\Users\Ктото\source\repos\Homework\Debug\Posledch.exe

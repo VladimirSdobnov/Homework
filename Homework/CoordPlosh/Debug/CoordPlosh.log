@@ -1,0 +1,8 @@
+﻿  PloshCoorTr.c
+C:\Users\Ктото\source\repos\Homework\CoordPlosh\PloshCoorTr.c(14,8): warning C4013: system: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\Ктото\source\repos\Homework\CoordPlosh\PloshCoorTr.c(24,46): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Ктото\source\repos\Homework\CoordPlosh\PloshCoorTr.c(25,46): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Ктото\source\repos\Homework\CoordPlosh\PloshCoorTr.c(26,46): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Ктото\source\repos\Homework\CoordPlosh\PloshCoorTr.c(36,26): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Ктото\source\repos\Homework\CoordPlosh\PloshCoorTr.c(37,46): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  CoordPlosh.vcxproj -> C:\Users\Ктото\source\repos\Homework\Debug\CoordPlosh.exe

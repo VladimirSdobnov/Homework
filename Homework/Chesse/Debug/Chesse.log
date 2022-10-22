@@ -1,0 +1,3 @@
+﻿  Chesse.c
+C:\Users\Ктото\source\repos\Homework\Chesse\Chesse.c(5,9): warning C4013: abs: нет определения; предполагается "extern" с возвратом типа "int"
+  Chesse.vcxproj -> C:\Users\Ктото\source\repos\Homework\Debug\Chesse.exe

@@ -1,0 +1,3 @@
+﻿  Zatchet.c
+C:\Users\Ктото\source\repos\Homework\Zatchet\Zatchet.c(9,28): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  Zatchet.vcxproj -> C:\Users\Ктото\source\repos\Homework\Debug\Zatchet.exe

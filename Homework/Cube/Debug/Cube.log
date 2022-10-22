@@ -1,0 +1,6 @@
+﻿  Cube.c
+C:\Users\Ктото\source\repos\Homework\Cube\Cube.c(15,15): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Ктото\source\repos\Homework\Cube\Cube.c(16,22): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Ктото\source\repos\Homework\Cube\Cube.c(17,22): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Ктото\source\repos\Homework\Cube\Cube.c(20,8): warning C4013: system: нет определения; предполагается "extern" с возвратом типа "int"
+  Cube.vcxproj -> C:\Users\Ктото\source\repos\Homework\Debug\Cube.exe

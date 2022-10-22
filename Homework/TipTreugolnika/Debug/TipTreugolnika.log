@@ -1,0 +1,3 @@
+﻿  TipTreugolnika.c
+C:\Users\Ктото\source\repos\Homework\TipTreugolnika\TipTreugolnika.c(77,8): warning C4013: system: нет определения; предполагается "extern" с возвратом типа "int"
+  TipTreugolnika.vcxproj -> C:\Users\Ктото\source\repos\Homework\Debug\TipTreugolnika.exe
