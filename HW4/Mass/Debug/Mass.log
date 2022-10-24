@@ -1,0 +1,12 @@
+﻿  Mass.c
+C:\Users\Ктото\source\repos\Homework\HW4\Mass\Mass.c(69,15): warning C4244: функция: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Ктото\source\repos\Homework\HW4\Mass\Mass.c(129,17): warning C4474: "printf" : для строки формата передано слишком много аргументов
+C:\Users\Ктото\source\repos\Homework\HW4\Mass\Mass.c(129,17): message : заполнители и их параметры ожидают переменное число аргументов в количестве 0, но было предоставлено 1
+C:\Users\Ктото\source\repos\Homework\HW4\Mass\Mass.c(179,19): warning C4474: "printf" : для строки формата передано слишком много аргументов
+C:\Users\Ктото\source\repos\Homework\HW4\Mass\Mass.c(179,19): message : заполнители и их параметры ожидают переменное число аргументов в количестве 0, но было предоставлено 1
+C:\Users\Ктото\source\repos\Homework\HW4\Mass\Mass.c(241,19): warning C4474: "printf" : для строки формата передано слишком много аргументов
+C:\Users\Ктото\source\repos\Homework\HW4\Mass\Mass.c(241,19): message : заполнители и их параметры ожидают переменное число аргументов в количестве 0, но было предоставлено 1
+C:\Users\Ктото\source\repos\Homework\HW4\Mass\Mass.c(130,1): warning C4267: инициализация: преобразование из "size_t" в "SHORT"; возможна потеря данных
+C:\Users\Ктото\source\repos\Homework\HW4\Mass\Mass.c(180,1): warning C4267: инициализация: преобразование из "size_t" в "SHORT"; возможна потеря данных
+C:\Users\Ктото\source\repos\Homework\HW4\Mass\Mass.c(242,1): warning C4267: инициализация: преобразование из "size_t" в "SHORT"; возможна потеря данных
+  Mass.vcxproj -> C:\Users\Ктото\source\repos\Homework\HW4\Debug\Mass.exe
