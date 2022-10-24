@@ -1,0 +1,5 @@
+﻿  FuntionMenu.c
+C:\Users\Ктото\source\repos\Homework\HW4\FunctionOfMenu\FuntionMenu.c(49,16): warning C4474: "printf" : для строки формата передано слишком много аргументов
+C:\Users\Ктото\source\repos\Homework\HW4\FunctionOfMenu\FuntionMenu.c(49,16): message : заполнители и их параметры ожидают переменное число аргументов в количестве 0, но было предоставлено 1
+C:\Users\Ктото\source\repos\Homework\HW4\FunctionOfMenu\FuntionMenu.c(50,1): warning C4267: инициализация: преобразование из "size_t" в "SHORT"; возможна потеря данных
+  FunctionOfMenu.vcxproj -> C:\Users\Ктото\source\repos\Homework\HW4\Debug\FunctionOfMenu.exe
