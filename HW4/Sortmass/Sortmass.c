@@ -1,78 +1,68 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <stdlib.h>
+#include <time.h>
+#include <malloc.h>
 
-int found(int* mass_1, int* mass_2, int size) {
-	int k = 0;
+void generaterand(int* mass, int size) {
 	for (int i = 0; i < size; i++) {
-		if (mass_1[i] % 2 == 0) {
-			k++;
-		}
-	}
-	free(mass_2);
-	mass_2 = (int*)malloc(sizeof(int) * k);
-	k = 0;
-	for (int i = 0; i < size; i++) {
-		if (mass_1[i] % 2 == 0) {
-			mass_2[k] = mass_1[i];
-			k++;
-		}
-	}
-	return k;
-}
-
-void sort(int* mass, int size) {
-	int x;
-	for (int i = 0; i < size - 1; i++) {
-		if (mass[i] > mass[i + 1]) {
-			x = mass[i];
-			mass[i] = mass[i + 1];
-			mass[i + 1] = x;
-			i = 0;
-		}
-	}
-	for (int i = 0; i < size - 1; i++) {
-		if (mass[i] > mass[i + 1]) {
-			x = mass[i];
-			mass[i] = mass[i + 1];
-			mass[i + 1] = x;
-			i = 0;
-		}
+		mass[i] = rand() % 2001 - 1000;
 	}
 }
 
-void ch_sort(int* mass_1, int* mass_2, int size) {
-	sort(mass_2, found(mass_1, mass_2, size));
+void swap(int* mass, int a, int b) {
+	int c;
+	c = mass[a];
+	mass[a] = mass[b];
+	mass[b] = c;
+}
+
+void sort_ch(int* mass, int size) {
+	int i = 0;
 	int k = 0;
-	for (int i = 0; i < size; i++) {
-		if (mass_1[i] % 2 == 0) {
-			mass_1[i] = mass_2[k];
-			k++;
+	int flag = 1;
+	int flag_exit = 0;
+	int b = -1;
+	while (flag_exit != size + 1) {
+		if (i == size) {
+			flag = 1;
+			i = -1;
+			flag_exit++;
 		}
+		else {
+			if (mass[i] % 2 == 0 && flag) {
+				k = i;
+				if (k > b) {
+					flag = 0;
+					b = k;
+				}
+			}
+			if (!flag && mass[i] < mass[k] && mass[i] % 2 ==0) {
+				swap(mass, i, k);
+			}
+		}
+		i++;
 	}
 }
 
 void show(int* mass, int size) {
+	printf("Elements of massive: ");
 	for (int i = 0; i < size; i++) {
 		printf("%d ", mass[i]);
 	}
 }
 
-void generaterand(int* mass, int size) {
-	for (int i = 0; i < size; i++) {
-		mass[i] = rand() % 21 - 10;
-	}
-}
-
 int main() {
+	srand(time(0));
 	int size;
+	int* mass;
+
 	printf("Enter size of massive: ");
 	scanf_s("%d", &size);
-	int* mass = (int*)malloc(sizeof(int) * size);
-	int* mass_2 = (int*)malloc(sizeof(int) * 1);
+	mass = (int*)malloc(sizeof(int) * size);
 	generaterand(mass, size);
 	show(mass, size);
 	printf("\n");
-	ch_sort(mass, mass_2, size);
+	sort_ch(mass, size);
 	show(mass, size);
 }

@@ -1,2 +1,3 @@
 ﻿  Sortmass.c
+C:\Users\Ктото\source\repos\Homework\HW4\Sortmass\Sortmass.c(56,15): warning C4244: функция: преобразование "time_t" в "unsigned int", возможна потеря данных
   Sortmass.vcxproj -> C:\Users\Ктото\source\repos\Homework\HW4\Debug\Sortmass.exe
