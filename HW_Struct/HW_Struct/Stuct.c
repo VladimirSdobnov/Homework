@@ -13,23 +13,54 @@ struct DIMENSIONS {
 	int length;
 };
 
-struct DIMENSIONS entersize(int a, int b, int c) {
-	struct DIMENSIONS size;
-	size.height = a;
-	size.width = b;
-	size.length = c;
-	return size;
+void entersize(struct DIMENSIONS *size) {
+	printf("Введите высоту шкафа: ");
+	scanf_s("%d", &size->height);
+	printf("Введите длину шкафа: ");
+	scanf_s("%d", &size->length);
+	printf("Введите ширину шкафа: ");
+	scanf_s("%d", &size->width);
 }
 
-int sqr_size(struct DIMENSIONS size) {
-	return size.height * size.length + 2 + size.height * size.width * 2 + size.width * size.length * 2;
+float sqr_size(struct DIMENSIONS size) {
+	float summ;
+	summ = (size.height * size.length * 2 + size.height * size.width * 2 + size.width * size.length * 2) * 0.0001;
+	return summ;
 }
 
-void paintingcost(struct DIMENSIONS size, float consupt, float workcost, float paintcost) {
+float paintingcost(struct DIMENSIONS size, float consupt, float workcost, float paintcost) {
 	float summ = 0;
-	summ += sqr_size(size) * 0,0001 * consupt * paintcost;
-	summ += sqr_size(size) * workcost;
-	printf("Стоимость покраски составит %d рублей", summ);
+	summ += (float)sqr_size(size) * consupt * paintcost;
+	summ += (float)sqr_size(size) * workcost;
+	return summ;
+}
+
+float cupcost(struct DIMENSIONS size, float cupboardcost) {
+	float summ = 0;
+	summ += (float)sqr_size(size) * cupboardcost;
+	return summ;
+}
+
+float masssize(struct DIMENSIONS size, float masspersqr) {
+	float summ = 0;
+	summ += (float)sqr_size(size) * masspersqr;
+	return summ;
+}
+
+float uppingcost(struct DIMENSIONS size, int qua, float cost, float masspersqr, float rise) {
+	float summ = 0;
+	summ = masssize(size, masspersqr) * qua * cost + rise;
+	return summ;
+}
+
+void totalcost(struct DIMENSIONS size, int qua, float cost, float masspersqr, float rise, float consupt, float workcost, float paintcost,
+	float cupboardcost) {
+	printf("Стоимость работ:\n");
+	printf("%.2f - Шкаф\n", cupcost(size, cupboardcost));
+	printf("%.2f - Покраска\n", paintingcost(size, consupt, workcost, paintcost));
+	printf("%.2f - Доставка до квартиры\n", uppingcost(size, qua, cost, masspersqr, rise));
+	printf("%.2f - Итоговая стоимость\n", cupcost(size, cupboardcost) + paintingcost(size, consupt, workcost, paintcost) + uppingcost(size, qua, cost, masspersqr, rise));
+	system("pause");
 }
 
 struct BOOK {
@@ -200,10 +231,14 @@ int main() {
 	struct TIME time;
 	time = entertime();
 
-	struct DIMENSIONS size;
-	size = entersize(12, 12, 12);
+	struct DIMENSIONS size = {1, 1, 1};
+	system("cls");
+	entersize(&size);
+	printf("%d\n", size.height);
+	printf("%f\n", sqr_size(size));
+	totalcost(size, 5, 2.5, 0.9, 500, 0.8, 35.00, 50.00, 650);
 
-	struct DATE date = { 12, 12, 2012 };
+	struct DATE date2 = { 12, 12, 2012 };
 	struct DATE new_date;
-	new_date = enterdate(date);
+	new_date = enterdate(date2);
 }

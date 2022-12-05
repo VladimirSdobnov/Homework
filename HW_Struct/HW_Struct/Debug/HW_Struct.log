@@ -1,2 +1,5 @@
 ﻿  Stuct.c
-  HW_Struct.vcxproj -> C:\Users\Ктото\source\repos\HW_Struct\Debug\HW_Struct.exe
+C:\Users\Ктото\source\repos\Homework\HW_Struct\HW_Struct\Stuct.c(27,111): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Ктото\source\repos\Homework\HW_Struct\HW_Struct\Stuct.c(239,29): warning C4305: функция: усечение из "double" в "float"
+C:\Users\Ктото\source\repos\Homework\HW_Struct\HW_Struct\Stuct.c(239,39): warning C4305: функция: усечение из "double" в "float"
+  HW_Struct.vcxproj -> C:\Users\Ктото\source\repos\Homework\HW_Struct\Debug\HW_Struct.exe
